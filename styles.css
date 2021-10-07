@@ -116,7 +116,7 @@ aside img {
 .music-more {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
 }
 .stroke {
   display: flex;
