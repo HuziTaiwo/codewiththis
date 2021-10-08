@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #5fcceb80;
+}
+::-webkit-scrollbar-thumb {
+  background: #5fcceb;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5fcceb;
+}
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+}
+main {
+  padding: 0 20px;
+  width: 100%;
+}
+nav {
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  padding: 8px 10px;
+  background: #015fcb;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+aside {
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  padding: 10px;
+  transition: 0.2s ease-in;
+  overflow-y: scroll;
+}
+aside h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #015fcb;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+aside button {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  background: #fff;
+  color: #015fcb;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 100px;
+  outline-color: #5fcceb;
+}
+aside button:active {
+  background: #5fcceb;
+  color: #fff;
+}
+aside img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details {
+  padding: 0 10px;
+}
+#music {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.album_cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 790px) {
+  aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    transform: translateX(-100%);
+    overflow-y: scroll;
+  }
+  aside.active {
+    transform: translateX(0%);
+  }
+}

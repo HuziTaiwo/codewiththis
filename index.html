@@ -5,41 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codewiththis</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     
+  <!-- <h1>Music</h1>
+  <ul>
+    <li>Music 1</li>
+    <li>Music 2</li>
+  </ul>
+  <form>
+    <input type="text" name="" id="">
+    <button type="submit">Add music</button>
+  </form> -->
+
+  <aside>
+      <h2>Library</h2>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+      <button>
+        <img src="./boats.jpg" alt="">
+        <div class="details">
+          <h3 class="name">Disconnect</h3>
+          <p class="artist">Victoriya</p>
+        </div>
+      </button>
+    </aside>
+
+    <main>
+      <nav>
+        <h1>CWT music</h1>
+        <button>Library</button>
+      </nav>
+      <section id="music">
+        <img src="./boats.jpg" alt="" class="album_cover">
+        <div class="music-indicator">
+          <span>0:00</span>
+          <img src="./icon/moving-line.svg" alt="">
+          <span>4:00</span>
+        </div>
+        <div class="music-controller">
+          <img src="./icon/left.svg" alt="">
+          <img src="./icon/play.svg" alt="">
+          <img src="./icon/right.svg" alt="">
+          <img src="./icon/mute.svg" alt="">
+        </div>
+      </section>
+    </main>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <!-- <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script> -->
-
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-        apiKey: "AIzaSyDvHszomghlazZmFtM7V8A36n6uBRDsARs",
-        authDomain: "music-app-bc41d.firebaseapp.com",
-        projectId: "music-app-bc41d",
-        storageBucket: "music-app-bc41d.appspot.com",
-        messagingSenderId: "774230051151",
-        appId: "1:774230051151:web:78b288664af71171b1dd3a",
-        measurementId: "G-X52EFDSH9H"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    // firebase.analytics();
-
-    // make auth and firesore references
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
-    // update firestore settings
-    db.settings( { timestampsInSnapshots: true } )
-  </script>
+  <script src="./scripts/db.js"></script>
+  <script src="./scripts/app.js"></script>
 </body>
 </html>
