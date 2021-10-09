@@ -46,6 +46,7 @@ nav button {
   font-size: 1rem;
   border-radius: 3px;
   cursor: pointer;
+  outline-color: #5fcceb;
 }
 h1 {
   text-transform: uppercase;
@@ -113,7 +114,7 @@ aside img {
 .music-controller {
   display: flex;
   justify-content: space-between;
-  min-width: 50%;
+  width: 50%;
 }
 .stroke {
   display: flex;
@@ -145,8 +146,15 @@ aside img {
     transform: translateX(-100%);
     overflow-y: scroll;
     height: auto;
+    z-index: 2;
   }
   aside.active {
     transform: translateX(0%);
+  }
+}
+
+@media (max-width: 600px) {
+  .music-controller {
+    width: 90%;
   }
 }
