@@ -55,7 +55,7 @@ h1 {
 aside {
   background: #fff;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  width: 360px;
+  width: 400px;
   padding: 10px;
   transition: 0.2s ease-in;
   overflow-y: scroll;
@@ -68,15 +68,14 @@ aside h2 {
   letter-spacing: 1px;
 }
 aside button {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
   align-items: center;
   background: #fff;
   color: #015fcb;
   border: none;
   cursor: pointer;
   margin-bottom: 10px;
-  height: 100px;
+  height: 115px;
   outline-color: #5fcceb;
 }
 aside button:active {
@@ -84,12 +83,13 @@ aside button:active {
   color: #fff;
 }
 aside img {
-  width: 100%;
+  width: 135px;
   height: 100%;
   object-fit: cover;
 }
 .details {
   padding: 0 10px;
+  text-align: left;
 }
 #music {
   height: 90%;
