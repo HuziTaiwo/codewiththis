@@ -103,10 +103,26 @@ aside img {
   border-radius: 50%;
   object-fit: cover;
 }
+.music-indicator {
+  display: flex;
+  align-items: center;
+}
+.music-indicator span {
+  padding: 0 5px;
+}
 .music-controller {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  min-width: 50%;
+}
+.stroke {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#indicator {
+  position: absolute;
+  left: 0;
 }
 .music-controller button {
   cursor: pointer;

@@ -8,17 +8,6 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
-  <!-- <h1>Music</h1>
-  <ul>
-    <li>Music 1</li>
-    <li>Music 2</li>
-  </ul>
-  <form>
-    <input type="text" name="" id="">
-    <button type="submit">Add music</button>
-  </form> -->
-
   <aside>
       <h2>Library</h2>
       <button>
@@ -81,25 +70,33 @@
         <img src="./boats.jpg" alt="" class="album_cover">
         <div class="music-indicator">
           <span>0:00</span>
-          <img src="./icon/moving-line.svg" alt="">
+          <div class="stroke">
+            <svg id="indicator" width="400" height="10" viewBox="0 0 400 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5H395" stroke="#015FCB" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+            <svg width="400" height="10" viewBox="0 0 400 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5H395" stroke="#5FCCEB" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+          </div>
           <span>4:00</span>
         </div>
         <div class="music-controller">
           <button>
-            <img src="./icon/left.svg" alt="">
+            <img class="previous" src="./icon/previous.svg" alt="">
           </button>
           <button>
-            <img src="./icon/play.svg" alt="">
+            <img class="play" src="./icon/play.svg" alt="">
           </button>
           <button>
-            <img src="./icon/right.svg" alt="">
+            <img class="next" src="./icon/next.svg" alt="">
           </button>
           <button>
-            <img src="./icon/mute.svg" alt="">
+            <img class="mute" src="./icon/mute.svg" alt="">
           </button>
         </div>
       </section>
     </main>
+    <ul></ul>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
