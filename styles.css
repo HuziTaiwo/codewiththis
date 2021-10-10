@@ -21,6 +21,7 @@ body {
   display: flex;
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
   overflow-y: hidden;
   position: relative;
 }
@@ -154,6 +155,9 @@ aside img {
 }
 
 @media (max-width: 600px) {
+  nav {
+    width: 98%;
+  }
   .music-controller {
     width: 90%;
   }
