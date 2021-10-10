@@ -112,7 +112,8 @@ aside img {
 .music-indicator span {
   padding: 0 5px;
 }
-.music-controller {
+.music-controller,
+.music-more {
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -126,7 +127,8 @@ aside img {
   position: absolute;
   left: 0;
 }
-.music-controller button {
+.music-controller button,
+.music-more button {
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -158,7 +160,8 @@ aside img {
   nav {
     width: 98%;
   }
-  .music-controller {
+  .music-controller,
+  .music-more {
     width: 90%;
   }
 }
