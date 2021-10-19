@@ -61,6 +61,6 @@ const getMusic = async () => {
     return response;
 }
 
-// getMusic()
-//     .then(snapshot => updateUI(snapshot.docs))
-//     .catch(err => console.log(err));
+ getMusic()
+     .then(snapshot => updateUI(snapshot.docs))
+     .catch(err => console.log(err));
